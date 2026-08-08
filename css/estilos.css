@@ -20,15 +20,13 @@ body {
 /* ----------------------------- */
 
 header {
-    background: linear-gradient(to right, #D62828, #A4161A, #800020);
+    background: linear-gradient(to right, #D62828, #800020);
     color: white;
     text-align: center;
     padding: 40px;
 }
-
 header h1 {
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 header h2 {
@@ -200,6 +198,8 @@ footer p {
 /* ACTIVIDAD 2 - SELECTORES */
 /* ----------------------------- */
 
+/* Selector: cambia el color de fondo y el color del texto */
+
 aside {
     background: #FFF4E6;
     color: #444;
@@ -209,6 +209,8 @@ aside {
 /* ACTIVIDAD 2 - CLASS */
 /* ----------------------------- */
 
+/* Class: modifica el tamaño y el tipo de letra */
+
 .subtitulo {
     font-size: 28px;
     font-family: Georgia, "Times New Roman", serif;
@@ -217,6 +219,8 @@ aside {
 /* ----------------------------- */
 /* ACTIVIDAD 2 - ID */
 /* ----------------------------- */
+
+/* ID: modifica el tipo de letra */
 
 #titulo-bienvenida {
     font-family: "Trebuchet MS", Arial, sans-serif;
