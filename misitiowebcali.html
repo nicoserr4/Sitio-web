@@ -1,263 +1,332 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Descubre Cali</title>
+<title>Descubre Cali</title>
 
-    <link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/estilos.css">
 
 </head>
 
 <body>
 
-    <header>
+<header>
 
-        <h1>Descubre Cali</h1>
+<h1>Descubre Cali</h1>
 
-        <h2 class="subtitulo">Lugares y planes imperdibles</h2>
+<h2 class="subtitulo">Lugares y planes imperdibles</h2>
 
-    </header>
+</header>
 
 
-    <section>
+<!-- MENÚ DE NAVEGACIÓN - SEMANA 4 -->
 
-        <img src="imagenes/cali.jpg" alt="Panorámica de Cali">
+<nav>
 
+<a href="#bienvenida">Inicio</a>
 
-        <article>
+<a href="#lugares">Lugares</a>
 
-            <h2 id="titulo-bienvenida">Bienvenido</h2>
+<a href="#categorias">Categorías</a>
 
-            <p>
-                Bienvenido a <strong>Descubre Cali: Lugares y Planes Imperdibles</strong>.
-                Este sitio web presenta algunos de los lugares más representativos de la ciudad,
-                desde monumentos y museos hasta espacios naturales y culturales.
-                Su objetivo es ayudar a descubrir sitios ideales para disfrutar de la historia,
-                la naturaleza, el arte, la ciencia y la diversión que ofrece Cali.
-            </p>
+<a href="#autora">Autora</a>
 
-        </article>
+</nav>
 
 
-        <h2>¿Qué encontrarás en este sitio?</h2>
+<section>
 
-        <ul>
+<img src="imagenes/cali.jpg" alt="Panorámica de Cali">
 
-            <li>Cristo Rey</li>
-            <li>Bulevar del Río</li>
-            <li>Plazoleta Jairo Varela</li>
-            <li>Zoológico de Cali</li>
-            <li>El Gato del Río</li>
-            <li>Museo La Tertulia</li>
-            <li>Jardín Botánico de Cali</li>
-            <li>Museo de la Salsa</li>
-            <li>Yawa - Centro de Ciencia</li>
-            <li>Río Pance</li>
 
-        </ul>
+<article id="bienvenida">
 
+<h2 id="titulo-bienvenida">Bienvenido</h2>
 
-        <!-- TABLA - SEMANA 3 -->
+<p id="parrafo-bienvenida" class="texto-principal">
 
-        <h2>Información de los lugares</h2>
+Bienvenido a <strong>Descubre Cali: Lugares y Planes Imperdibles</strong>.
+Este sitio web presenta algunos de los lugares más representativos de la ciudad,
+desde monumentos y museos hasta espacios naturales y culturales.
+Su objetivo es ayudar a descubrir sitios ideales para disfrutar de la historia,
+la naturaleza, el arte, la ciencia y la diversión que ofrece Cali.
 
-        <p class="introduccion-tabla">
-            Estos son algunos de los lugares que puedes encontrar en
-            Descubre Cali, organizados según su categoría.
-        </p>
+</p>
 
+</article>
 
-        <table class="tabla-cali">
 
-            <thead>
+<h2>¿Qué encontrarás en este sitio?</h2>
 
-                <tr>
 
-                    <th>Categoría</th>
+<!-- SELECTOR DESCENDIENTE - SEMANA 4 -->
 
-                    <th>Lugares</th>
+<div class="lista-lugares">
 
-                </tr>
+<ul>
 
-            </thead>
+<li>Cristo Rey</li>
 
+<li>Bulevar del Río</li>
 
-            <tbody>
+<li>Plazoleta Jairo Varela</li>
 
-                <tr>
+<li>Zoológico de Cali</li>
 
-                    <td>Monumentos</td>
+<li>El Gato del Río</li>
 
-                    <td>
-                        Cristo Rey, El Gato del Río
-                    </td>
+<li>Museo La Tertulia</li>
 
-                </tr>
+<li>Jardín Botánico de Cali</li>
 
+<li>Museo de la Salsa</li>
 
-                <tr>
+<li>Yawa - Centro de Ciencia</li>
 
-                    <td>Cultura</td>
+<li>Río Pance</li>
 
-                    <td>
-                        Bulevar del Río, Plazoleta Jairo Varela,
-                        Museo La Tertulia, Museo de la Salsa
-                    </td>
+</ul>
 
-                </tr>
+</div>
 
 
-                <tr>
+<!-- TABLA - SEMANA 3 -->
 
-                    <td>Naturaleza</td>
+<h2 id="categorias">Información de los lugares</h2>
 
-                    <td>
-                        Zoológico de Cali, Jardín Botánico de Cali,
-                        Río Pance
-                    </td>
+<p class="introduccion-tabla">
 
-                </tr>
+Estos son algunos de los lugares que puedes encontrar en
 
+<strong>Descubre Cali</strong>, organizados según su categoría.
 
-                <tr>
+</p>
 
-                    <td>Ciencia</td>
 
-                    <td>
-                        Yawa - Centro de Ciencia
-                    </td>
+<table class="tabla-cali">
 
-                </tr>
+<thead>
 
-            </tbody>
+<tr>
 
-        </table>
+<th>Categoría</th>
 
+<th>Lugares</th>
 
-        <!-- PROPIEDADES DE TEXTO - SEMANA 3 -->
+</tr>
 
-        <div class="ejemplos-texto">
+</thead>
 
-            <p class="frase-positiva">
 
-                En Cali
+<tbody>
 
-                <span class="palabras-cambio">
+<tr>
 
-                    <span class="texto-rayado">NUNCA</span>
+<td>Monumentos</td>
 
-                    <span class="siempre">SIEMPRE</span>
+<td>
 
-                </span>
+Cristo Rey, El Gato del Río
 
-                hay algo que hacer.
+</td>
 
-            </p>
+</tr>
 
-        </div>
 
+<tr>
 
-        <h2>Explora los lugares</h2>
+<td>Cultura</td>
 
-        <p>
-            Haz clic sobre alguno de los siguientes lugares para conocer más información.
-        </p>
+<td>
 
+Bulevar del Río, Plazoleta Jairo Varela,
+Museo La Tertulia, Museo de la Salsa
 
-        <div class="contenedor">
+</td>
 
-            <a href="lugares/cristorey.html" class="tarjeta">
-                🗿<br>Cristo Rey
-            </a>
+</tr>
 
-            <a href="lugares/bulevar.html" class="tarjeta">
-                🌊<br>Bulevar del Río
-            </a>
 
-            <a href="lugares/jairo.html" class="tarjeta">
-                🎺<br>Plazoleta Jairo Varela
-            </a>
+<tr>
 
-            <a href="lugares/zoologico.html" class="tarjeta">
-                🦁<br>Zoológico
-            </a>
+<td>Naturaleza</td>
 
-            <a href="lugares/gato.html" class="tarjeta">
-                🐱<br>El Gato del Río
-            </a>
+<td>
 
-            <a href="lugares/tertulia.html" class="tarjeta">
-                🏛️<br>La Tertulia
-            </a>
+Zoológico de Cali, Jardín Botánico de Cali,
+Río Pance
 
-            <a href="lugares/botanico.html" class="tarjeta">
-                🌿<br>Jardín Botánico
-            </a>
+</td>
 
-            <a href="lugares/salsa.html" class="tarjeta">
-                💃<br>Museo de la Salsa
-            </a>
+</tr>
 
-            <a href="lugares/yawa.html" class="tarjeta">
-                🔬<br>Yawa
-            </a>
 
-            <a href="lugares/pance.html" class="tarjeta">
-                💦<br>Río Pance
-            </a>
+<tr>
 
-        </div>
+<td>Ciencia</td>
 
-    </section>
+<td>
 
+Yawa - Centro de Ciencia
 
-    <aside>
+</td>
 
-        <h2>Sobre la autora</h2>
+</tr>
 
-        <img src="imagenes/nicole.jpg" alt="Nicole">
+</tbody>
 
-        <p>
-            Mi nombre es <strong>Nicole Sofía Serrano Bonilla</strong>. Tengo 16 años,
-            nací el 19 de noviembre de 2009 en Bogotá, Colombia, y actualmente resido
-            en la ciudad de Cali. Soy estudiante de décimo grado y desarrollé este sitio
-            web como parte de un proyecto académico para aprender los fundamentos de HTML
-            y compartir algunos de los lugares y planes más interesantes que ofrece Cali.
-        </p>
+</table>
 
-    </aside>
 
+<!-- PROPIEDADES DE TEXTO - SEMANA 3 -->
 
-    <footer>
+<div class="ejemplos-texto">
 
-        <h3>Información de contacto</h3>
+<p class="frase-positiva">
 
-        <p>
-            <strong>Nombre:</strong> Nicole Sofía Serrano Bonilla
-        </p>
+En Cali
 
-        <p>
-            <strong>Correo:</strong> nick1serr4@gmail.com
-        </p>
+<span class="palabras-cambio">
 
-        <p>
-            <strong>Contacto:</strong> 316 622 1545
-        </p>
+<span class="texto-rayado">NUNCA</span>
 
-        <p>
-            <strong>Institución:</strong> Skolmi
-        </p>
+<span class="siempre">SIEMPRE</span>
 
-        <p>
-            © 2026 - Descubre Cali. Cali siempre tiene un nuevo lugar por descubrir.
-        </p>
+</span>
 
-    </footer>
+hay algo que hacer.
+
+</p>
+
+</div>
+
+
+<h2 id="lugares">Explora los lugares</h2>
+
+
+<p class="texto-principal">
+
+Haz clic sobre alguno de los siguientes lugares para conocer más información.
+
+</p>
+
+
+<div class="contenedor">
+
+
+<a href="lugares/cristorey.html" class="tarjeta">
+
+🗿<br>Cristo Rey
+
+</a>
+
+
+<a href="lugares/bulevar.html" class="tarjeta">
+
+🌊<br>Bulevar del Río
+
+</a>
+
+
+<a href="lugares/jairo.html" class="tarjeta">
+
+🎺<br>Plazoleta Jairo Varela
+
+</a>
+
+
+<a href="lugares/zoologico.html" class="tarjeta">
+
+🦁<br>Zoológico
+
+</a>
+
+
+<a href="lugares/gato.html" class="tarjeta">
+
+🐱<br>El Gato del Río
+
+</a>
+
+
+<a href="lugares/tertulia.html" class="tarjeta">
+
+🏛️<br>La Tertulia
+
+</a>
+
+
+<a href="lugares/botanico.html" class="tarjeta">
+
+🌿<br>Jardín Botánico
+
+</a>
+
+
+<a href="lugares/salsa.html" class="tarjeta">
+
+💃<br>Museo de la Salsa
+
+</a>
+
+
+<a href="lugares/yawa.html" class="tarjeta">
+
+🔬<br>Yawa
+
+</a>
+
+
+<a href="lugares/pance.html" class="tarjeta">
+
+💦<br>Río Pance
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+<!-- AUTORA -->
+
+<aside id="autora">
+
+<h2>Sobre la autora</h2>
+
+<img src="imagenes/nicole.jpg" alt="Autora del sitio web">
+
+<p class="texto-principal">
+
+Soy estudiante de décimo grado y desarrollé este sitio web como parte
+de un proyecto académico para aprender los fundamentos de HTML y CSS
+y compartir algunos de los lugares y planes más interesantes que ofrece Cali.
+
+</p>
+
+</aside>
+
+
+<footer>
+
+<h3>Descubre Cali</h3>
+
+<p>
+
+© 2026 - Descubre Cali. Cali siempre tiene un nuevo lugar por descubrir.
+
+</p>
+
+</footer>
+
 
 </body>
 
