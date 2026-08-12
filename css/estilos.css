@@ -1,446 +1,406 @@
-/* ----------------------------- */
-/* ESTILO GENERAL */
-/* ----------------------------- */
-
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-font-family: Arial, Helvetica, sans-serif;
-background: #FFFDF8;
-color: #333;
-line-height: 1.7;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFDF8;
+    color: #333;
+    line-height: 1.7;
 }
 
-
-/* ----------------------------- */
 /* HEADER */
-/* ----------------------------- */
 
 header {
-background: linear-gradient(to right, #D62828, #800020);
-color: white;
-text-align: center;
-padding: 40px;
+    background: linear-gradient(to right, #D62828, #800020);
+    color: white;
+    text-align: center;
+    padding: 40px;
 }
 
 header h1 {
-font-size: 50px;
+    font-size: 50px;
 }
 
 header h2 {
-font-weight: normal;
+    font-weight: normal;
 }
 
+/* MENÚ DE BOOTSTRAP */
 
-/* ----------------------------- */
-/* MENÚ DE NAVEGACIÓN - SEMANA 4 */
-/* ----------------------------- */
-
-nav {
-background: #800020;
-width: 100%;
-height: 60px;
-overflow: hidden;
-text-align: center;
+.menu-bootstrap {
+    background: #800020;
+    min-height: 60px;
 }
 
-nav a {
-float: left;
-width: 25%;
-height: 60px;
-color: white;
-text-decoration: none;
-font-weight: bold;
-font-size: 18px;
-padding: 15px 10px;
-transition: 0.3s;
+.menu-bootstrap .navbar-brand {
+    font-weight: bold;
+    color: white;
 }
 
-nav a:hover {
-background: #FCBF49;
-color: #333;
+.menu-bootstrap .nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: 0.3s;
 }
 
+.menu-bootstrap .nav-link:hover {
+    background: #FCBF49;
+    color: #333;
+    border-radius: 5px;
+}
 
-/* ----------------------------- */
 /* IMAGEN PRINCIPAL */
-/* ----------------------------- */
 
 section img {
-width: 100%;
-max-height: 550px;
-object-fit: cover;
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
 }
 
-
-/* ----------------------------- */
 /* SECCIONES */
-/* ----------------------------- */
 
 section {
-width: 90%;
-margin: auto;
-padding: 40px 0;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
 }
 
 section h2 {
-color: #D62828;
-margin-bottom: 20px;
+    color: #D62828;
+    margin-bottom: 20px;
 }
 
 section p {
-text-align: justify;
+    text-align: justify;
 }
 
-
-/* ----------------------------- */
-/* COMBINACIÓN DE SELECTORES */
-/* SEMANA 4 */
-/* ----------------------------- */
+/* SELECTORES */
 
 section article p.texto-principal,
 aside p.texto-principal {
-font-size: 17px;
-line-height: 1.8;
-word-spacing: 4px;
+    font-size: 17px;
+    line-height: 1.8;
+    word-spacing: 4px;
 }
-
-
-/* ----------------------------- */
-/* AGRUPACIÓN DE SELECTORES */
-/* ID + CLASS - SEMANA 4 */
-/* ----------------------------- */
 
 #parrafo-bienvenida,
 .texto-principal {
-letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
 }
 
-
-/* ----------------------------- */
 /* LISTA */
-/* ----------------------------- */
 
 ul {
-margin-left: 30px;
-margin-top: 15px;
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
-
-/* ----------------------------- */
-/* SELECTOR DESCENDIENTE */
-/* SEMANA 4 */
-/* ----------------------------- */
-
 .lista-lugares ul li {
-margin-bottom: 8px;
-font-size: 17px;
-font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .lista-lugares ul li:hover {
-color: #D62828;
-transform: translateX(5px);
-transition: 0.3s;
+    color: #D62828;
+    transform: translateX(5px);
+    transition: 0.3s;
 }
 
-
-/* ----------------------------- */
 /* TARJETAS */
-/* ----------------------------- */
 
-.contenedor {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
-margin-top: 30px;
+.tarjeta-bootstrap {
+    background: white;
+    border: 3px solid #4CAF50;
+    border-radius: 18px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.tarjeta {
-width: 220px;
-background: white;
-border-radius: 18px;
-padding: 25px;
-text-align: center;
-text-decoration: none;
-color: #333;
-font-size: 22px;
-font-weight: bold;
-border: 3px solid #4CAF50;
-transition: 0.3s;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, .15);
+.tarjeta-bootstrap:hover {
+    background: #FCBF49;
+    color: #333;
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
+.tarjeta-bootstrap .card-body {
+    padding: 20px;
+}
 
-/* ----------------------------- */
+.tarjeta-bootstrap .card-title {
+    font-size: 21px;
+    font-weight: bold;
+    color: #800020;
+    margin-bottom: 10px;
+}
+
+.tarjeta-bootstrap .card-text {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.emoji-lugar {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+/* BOTONES */
+
+.btn-bootstrap-cali {
+    background: #D62828;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-bootstrap-cali:hover {
+    background: #4CAF50;
+    color: white;
+}
+
 /* AUTORA */
-/* ----------------------------- */
 
 aside {
-background: #FFF4E6;
-color: #444;
-text-align: center;
-padding: 50px;
+    background: #FFF4E6;
+    color: #444;
+    text-align: center;
+    padding: 50px;
 }
 
 aside h2 {
-color: #D62828;
-margin-bottom: 25px;
+    color: #D62828;
+    margin-bottom: 25px;
 }
 
 aside img {
-width: 220px;
-border-radius: 50%;
-margin-bottom: 25px;
-border: 5px solid #4CAF50;
+    width: 220px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    border: 5px solid #4CAF50;
 }
 
 aside p {
-width: 80%;
-margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
-
-/* ----------------------------- */
 /* FOOTER */
-/* ----------------------------- */
 
 footer {
-background: #D62828;
-color: white;
-text-align: center;
-padding: 35px;
+    background: #D62828;
+    color: white;
+    text-align: center;
+    padding: 35px;
 }
 
 footer p {
-margin: 10px;
+    margin: 10px;
 }
 
-
-/* ----------------------------- */
 /* PÁGINAS DE LUGARES */
-/* ----------------------------- */
 
 .detalle {
-width: 90%;
-max-width: 1200px;
-margin: 50px auto;
-display: flex;
-gap: 40px;
-align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .detalle img {
-width: 450px;
-border-radius: 18px;
-box-shadow: 0px 8px 20px rgba(0, 0, 0, .2);
+    width: 450px;
+    border-radius: 18px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .detalle article {
-flex: 1;
+    flex: 1;
 }
 
 .detalle h2 {
-color: #D62828;
-margin-bottom: 20px;
+    color: #D62828;
+    margin-bottom: 20px;
 }
 
 .detalle h3 {
-color: #F77F00;
-margin-top: 20px;
+    color: #F77F00;
+    margin-top: 20px;
 }
 
 .boton {
-display: inline-block;
-background: #D62828;
-color: white;
-padding: 14px 28px;
-border-radius: 12px;
-text-decoration: none;
-font-weight: bold;
-transition: .3s;
+    display: inline-block;
+    background: #D62828;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .boton:hover {
-background: #4CAF50;
+    background: #4CAF50;
 }
 
-
-/* ----------------------------- */
-/* ACTIVIDAD 2 - SELECTORES */
-/* ----------------------------- */
-
-aside {
-background: #FFF4E6;
-color: #444;
-}
-
-
-/* ----------------------------- */
-/* ACTIVIDAD 2 - CLASS */
-/* ----------------------------- */
+/* ACTIVIDAD 2 */
 
 .subtitulo {
-font-size: 28px;
-font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-family: Georgia, "Times New Roman", serif;
 }
-
-
-/* ----------------------------- */
-/* ACTIVIDAD 2 - ID */
-/* ----------------------------- */
 
 #titulo-bienvenida {
-font-family: "Trebuchet MS", Arial, sans-serif;
+    font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-
-/* ================================================= */
-/* SEMANA 3 - TABLA */
-/* ================================================= */
+/* TABLA */
 
 .tabla-cali {
-width: 100%;
-margin-top: 30px;
-margin-bottom: 40px;
-border-collapse: collapse;
-background: white;
-text-align: center;
-box-shadow: 0px 5px 15px rgba(0, 0, 0, .18);
-font-size: 16px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    background: white;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.18);
+    font-size: 16px;
 }
 
 .tabla-cali th {
-background: #800020;
-color: white;
-padding: 18px;
-font-size: 19px;
-text-align: center;
-letter-spacing: 2px;
-line-height: 1.5;
-text-decoration: underline;
-text-shadow: 2px 2px 3px #333;
-border: 2px solid #D62828;
+    background: #800020;
+    color: white;
+    padding: 18px;
+    font-size: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px #333;
+    border: 2px solid #D62828;
 }
 
 .tabla-cali td {
-padding: 18px;
-border: 2px solid #D62828;
-font-size: 16px;
-line-height: 1.7;
-word-spacing: 5px;
-letter-spacing: 0.5px;
-text-align: center;
+    padding: 18px;
+    border: 2px solid #D62828;
+    font-size: 16px;
+    line-height: 1.7;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+    text-align: center;
 }
 
 .tabla-cali tr:nth-child(even) {
-background: #FFF4E6;
+    background: #FFF4E6;
 }
 
 .tabla-cali tr:nth-child(odd) {
-background: #FFFDF8;
+    background: #FFFDF8;
 }
 
 .tabla-cali tr:hover {
-background: #FCBF49;
-transition: 0.3s;
+    background: #FCBF49;
+    transition: 0.3s;
 }
 
-
-/* ================================================= */
-/* SEMANA 3 - TEXTO */
-/* ================================================= */
+/* PROPIEDADES DE TEXTO */
 
 .introduccion-tabla {
-text-align: justify;
-font-size: 17px;
-line-height: 1.8;
-word-spacing: 4px;
-letter-spacing: 0.5px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.8;
+    word-spacing: 4px;
+    letter-spacing: 0.5px;
 }
 
 .ejemplos-texto {
-background: #FFF4E6;
-border-left: 6px solid #D62828;
-padding: 25px;
-margin: 30px 0;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, .12);
+    background: #FFF4E6;
+    border-left: 6px solid #D62828;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .frase-positiva {
-text-align: center;
-font-family: Georgia, "Times New Roman", serif;
-font-size: 24px;
-font-weight: bold;
-letter-spacing: 1px;
-margin: 30px 0;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 30px 0;
 }
 
 .palabras-cambio {
-display: inline-flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-vertical-align: middle;
-line-height: 1;
-margin: 0 8px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 1;
+    margin: 0 8px;
 }
 
 .texto-rayado {
-color: #D62828;
-text-decoration: line-through;
-font-family: "Trebuchet MS", Arial, sans-serif;
-font-weight: bold;
-font-size: 18px;
+    color: #D62828;
+    text-decoration: line-through;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .siempre {
-color: #4CAF50;
-font-family: Georgia, "Times New Roman", serif;
-font-weight: bold;
-font-size: 24px;
-margin-top: 4px;
+    color: #4CAF50;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 4px;
 }
 
+/* MENSAJE DE LA SEMANA 6 */
 
-/* ================================================= */
-/* AVANCE 5 - MODELO DE CAJA Y POSICIÓN */
-/* ================================================= */
-
-
-/* MODELO DE CAJA */
-
-.tarjeta {
-box-sizing: border-box;
-width: 220px;
-height: 130px;
-padding: 25px;
-margin: 10px;
-border: 3px solid #4CAF50;
-position: relative;
+.mensaje-bootstrap {
+    text-align: center;
+    font-size: 14px;
+    color: #800020;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
+/* RESPONSIVE */
 
-/* POSICIÓN ABSOLUTA */
+@media (max-width: 768px) {
 
-.tarjeta::after {
-content: "📍";
-position: absolute;
-top: 8px;
-right: 10px;
-font-size: 18px;
-}
+    header h1 {
+        font-size: 38px;
+    }
 
+    header h2 {
+        font-size: 22px;
+    }
 
-/* EFECTO DE POSICIÓN Y CAJA */
+    section {
+        width: 94%;
+    }
 
-.tarjeta:hover {
-background: #FCBF49;
-transform: translateY(-10px);
-box-shadow: 0px 10px 20px rgba(0, 0, 0, .25);
+    aside p {
+        width: 95%;
+    }
+
+    .tabla-cali {
+        font-size: 14px;
+    }
+
+    .tabla-cali th,
+    .tabla-cali td {
+        padding: 10px;
+    }
 }
